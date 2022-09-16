@@ -1,0 +1,20 @@
+{
+    "name": "heroku-test",
+    "description": "Application template description",
+    "logo": "https://nocodb.com/brand/favicon-64.png",
+    "keywords": [],
+    "success_url": "/admin",
+    "website": "https://example.com",
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    },
+    "stack": "container",
+    "addons": [
+      {
+        "plan": "heroku-postgresql:hobby-dev"
+      }
+    ],
+    "env": {}
+  }
