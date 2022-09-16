@@ -21,15 +21,28 @@
     ],
     "env": {
         "SYSTEM_SECRET": {
-            "description": "A secret key for verifying the integrity of signed cookies.",
+            "description": "A secret key for database encryption.",
             "generator": "secret"
         },
         "COOKIE_SECRET": {
-            "description": "A secret key for verifying the integrity of signed cookies.",
+            "description": "A secret key for cookie encryption.",
             "generator": "secret"
         },
         "CUSTOM_DOMAIN": {
-            "description": "A secret key for verifying the integrity of signed cookies."
+            "description": "Custom domain (if sommited your heroku app domain will be used)",
+            "required": false,
+            "value": "id.example.com"
+        },
+        "ROOT_ADMIN_EMAIL": {
+            "description": "Root admin email"
+        },
+        "ROOT_ADMIN_PASSWORD": {
+            "description": "Initial root admin password",
+            "generator": "secret"
+        },
+        "APPLICATION_DOMAIN": {
+            "description": "Your application domain",
+            "value": "example.com"
         }
     }
-  }
+}
