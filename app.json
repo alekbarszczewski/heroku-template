@@ -14,7 +14,22 @@
     "addons": [
       {
         "plan": "heroku-postgresql:hobby-dev"
+      },
+      {
+        "plan": "mailgun:starter"
       }
     ],
-    "env": {}
+    "env": {
+        "SYSTEM_SECRET": {
+            "description": "A secret key for verifying the integrity of signed cookies.",
+            "generator": "secret"
+        },
+        "COOKIE_SECRET": {
+            "description": "A secret key for verifying the integrity of signed cookies.",
+            "generator": "secret"
+        },
+        "CUSTOM_DOMAIN": {
+            "description": "A secret key for verifying the integrity of signed cookies."
+        }
+    }
   }
